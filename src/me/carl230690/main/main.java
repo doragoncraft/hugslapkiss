@@ -4,16 +4,13 @@ import java.util.logging.Logger;
 
 import org.bukkit.ChatColor;
 import org.bukkit.EntityEffect;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Ocelot;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffect;
 import org.bukkit.craftbukkit.v1_6_R2.entity.CraftOcelot;
-import org.bukkit.potion.PotionEffectType;
 
 public class main extends JavaPlugin
 {
@@ -33,7 +30,6 @@ public class main extends JavaPlugin
   }
   public boolean onCommand(CommandSender sender, Command cmd, String commandlabel, String[] args) {
     Player player = (Player)sender;
-    String jugador = player.getName();
     if (commandlabel.equalsIgnoreCase("hug")) {
       if (args.length == 0)
       {
@@ -88,6 +84,6 @@ public class main extends JavaPlugin
             else {
               sender.sendMessage(ChatColor.RED + "You slapped " + targetPlayer2.getName());
               targetPlayer2.sendMessage(ChatColor.RED + sender.getName() + " just slapped you!");
-              targetPlayer2.damage(2);
+              targetPlayer2.damage(2d);
     return false;}}}}
 	return false;}}
