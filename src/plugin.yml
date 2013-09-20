@@ -1,0 +1,13 @@
+name: DoragoncraftHugSlapKiss
+main: me.carl230690.main.main
+version: 1.0
+website: http://www.doragoncraft.com/
+author: carl230690
+
+commands:
+  hug:
+    description: Hugs
+  kiss:
+    description: Kisses
+  slap:
+    description: slaps
